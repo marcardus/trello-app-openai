@@ -7,20 +7,20 @@ export async function POST(request: Request) {
   console.log(todos);
 
   const response = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo", // change to 'gpt-4' if you have access to it
+    model: "gpt-4", 
     temperature: 0.8,
     n: 1,
     stream: false,
     messages: [
       {
         role: "system",
-        content: `When responding, welcome the user always as Mr.Sonny and say welcome to the PAPAFAM Todo App! Limit the response to 200 characters`,
+          content: `Al responder, da siempre la bienvenida al usuario como Srta. Mar y di '¡Bienvenida al gestor automático de tareas de Trello-Clone-2.0!'. Limita la respuesta a 200 caracteres.`,
       },
       {
         role: "user",
-        content: `Hi there, provide a summary of the following todos. Count how many todos are in each category such as To do, in progress and done, then tell the user to have a productive day! Here's the data: ${JSON.stringify(
-          todos
-        )}`,
+        content: `Hola, proporciona un resumen de las siguientes tareas. Cuenta cuántas hay en cada categoría, como Por hacer, En progreso y Hecho. Luego dile al usuario que tenga un día productivo 🚀. Aquí están los datos: ${JSON.stringify(
+            todos
+          )}`,
       },
     ],
   });

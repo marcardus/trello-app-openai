@@ -7,19 +7,19 @@ const types = [
   {
     id: "todo",
     name: "Todo",
-    description: "A new task to be completed",
+    description: "Una tarea pendiente de realizar",
     color: "bg-red-500",
   },
   {
     id: "inprogress",
     name: "In Progress",
-    description: "A task that is currently being worked on",
+    description: "Estoy en ello",
     color: "bg-yellow-500",
   },
   {
     id: "done",
     name: "Done",
-    description: "A task that has been completed",
+    description: "Tarea completada",
     color: "bg-green-500",
   },
 ];

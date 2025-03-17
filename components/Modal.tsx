@@ -78,7 +78,7 @@ function Modal() {
                     type="text"
                     value={newTaskInput}
                     onChange={(e) => setNewTaskInput(e.target.value)}
-                    placeholder="Enter a task here..."
+                    placeholder="Añade una tarea aquí..."
                     className="w-full border border-gray-300 rounded-md outline-none p-5"
                   />
                 </div>

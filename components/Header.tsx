@@ -38,7 +38,7 @@ function Header() {
           h-96
           bg-gradient-to-br
           from-pink-400
-          to-[#0055D1]
+          to-[#2d00d1]
           rounded-md
           filter
           blur-3xl
@@ -46,10 +46,10 @@ function Header() {
           -z-20"
         />
         <Image
-          src="https://links.papareact.com/c2cdd5"
+          src="/Trello-2.0-logo.png"
           alt="Trello Logo"
-          width={300}
-          height={100}
+          width={600}
+          height={200}
           className="font-bold w-44 md:w-56 pb-10 md:pb-0 object-contain"
         />
 
@@ -60,7 +60,7 @@ function Header() {
               type="text"
               value={searchString}
               onChange={(e) => setSearchString(e.target.value)}
-              placeholder="Search"
+              placeholder="Buscar"
               className="flex-1 outline-none p-2"
             />
             <button type="submit" hidden>
@@ -68,21 +68,21 @@ function Header() {
             </button>
           </form>
 
-          <Avatar name="Sonny Sangha" round size="50" color="#0055D1" />
+          <Avatar name="Mar Cardús" round size="50" color="#0055D1" />
         </div>
       </div>
 
       <div className="flex items-center justify-center px-5 md:py-5">
         <p className="flex items-center text-sm font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic p-5 max-w-3xl text-[#0055D1]">
           <UserCircleIcon
-            className={`inline-block h-10 w-10 text-[#0055D1] mr-1 ${
+            className={`inline-block h-10 w-10 text-[#80a7e0] mr-1 ${
               loading && "animate-spin"
             }`}
           />
 
           {suggestion && !loading
             ? suggestion
-            : "GPT is summarising your tasks for the day..."}
+            : "GPT está calculando tareas..."}
         </p>
       </div>
     </header>
