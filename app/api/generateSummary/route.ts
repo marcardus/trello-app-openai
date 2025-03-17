@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       },
       {
         role: "user",
-        content: `Hola, proporciona un resumen de las siguientes tareas. Cuenta cuántas hay en cada categoría, como Por hacer, En progreso y Hecho. Luego dile al usuario que tenga un día productivo 🚀. Aquí están los datos: ${JSON.stringify(
+        content: `Hola, proporciona un resumen de las siguientes tareas. Cuenta cuántas hay en cada categoría, como or hacer, en progreso y hecho. Luego dile al usuario que tenga un día productivo 🚀. Aquí están los datos: ${JSON.stringify(
             todos
           )}`,
       },

@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class', // Habilita la clase "dark"
   theme: {
     extend: {
       backgroundImage: {

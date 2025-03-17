@@ -38,7 +38,7 @@ function Header() {
           h-96
           bg-gradient-to-br
           from-pink-400
-          to-[#2d00d1]
+          to-[#2830a1]
           rounded-md
           filter
           blur-3xl
@@ -90,3 +90,8 @@ function Header() {
 }
 
 export default Header;
+
+
+
+
+
